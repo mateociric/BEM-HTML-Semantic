@@ -1,0 +1,71 @@
+/* import goolge fonts in CSS*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* ' * ' means all elements in HTML. Set there values to 0 for padding and margin */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* search bar and otehr content goes here*/
+.header {
+    width: 100vw;
+    height: 40px;
+    background-color: red;
+    text-align: center;
+}
+
+/* to align <aside> i <main>*/
+.flex-wrapper {
+    display: flex;
+}
+
+/* naviagtion goes here */
+.aside {
+    width: 4%;
+    background-color: blue;
+}
+
+/* video content goes here -> yu can use 'display: grid' to arrange video contents */
+.main {
+    width: 96%;
+    padding: 20px;
+}
+
+/* <section> for video file */
+.video-preview {
+    display: inline-block;
+}
+
+.video-preview,
+.video-preview__thumbnail {
+    width: 300px;
+}
+
+.video-preview__channel {
+    width: 40px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.video-preview__channel,
+.video-preview__info {
+    margin-top: 10px;
+}
+
+.video-preview__info {
+    margin-left: 10px;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    line-height: 15px;
+}
+
+.video-preview__info h5 {
+    margin-bottom: 8px;
+}
+
+.video-preview__info p {
+    font-size: 11px;
+    font-weight: 300;
+    color: #9c9c9c;
+}
